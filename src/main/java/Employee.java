@@ -4,18 +4,23 @@
  * @see <a href="https://cs125.cs.illinois.edu/lab/10/">Lab 10 Description</a>
  */
 public class Employee {
-
-    private String name;
-    private String manager;
+    /**
+     * The emplyees name.
+     */
+    private String myName;
+    /**
+     * The employees manager.
+     */
+    private String myManager;
 
     /**
      * Constructor for initialization.
-     * @param name
-     * @param manager
+     * @param name The employees name
+     * @param manager The managers name.
      */
     public Employee(final String name, final String manager) {
-        this.name = name;
-        this.manager = manager;
+        myName = name;
+        myManager = manager;
     }
 
     /**
@@ -23,15 +28,15 @@ public class Employee {
      * @return name
      */
     public String getName() {
-        return name;
+        return myName;
     }
 
     /**
      * Setter for name.
-     * @param name
+     * @param name the new name of the employee.
      */
     public void setName(final String name) {
-        this.name = name;
+        myName = name;
     }
 
     /**
@@ -39,14 +44,14 @@ public class Employee {
      * @return manager
      */
     public String getManager() {
-        return manager;
+        return myManager;
     }
 
     /**
      * Setter for manager.
-     * @param manager
+     * @param manager The new manager.
      */
     public void setManager(final String manager) {
-        this.manager = manager;
+        myManager = manager;
     }
 }
